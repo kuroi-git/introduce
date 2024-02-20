@@ -1,0 +1,47 @@
+/*ヘッダー全体の設定*/
+.header1 {
+  /* divを横並びにして、.header-logoと.header-menuを等間隔に左右に配置*/
+  display: flex; /* 要素の表示方法に関するプロパティ flex:横並び */
+  justify-content: space-between; /* フレックスアイテムの主軸方向の揃え位置を指定する space-between:余白をもって等間隔に配置  */
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  background: #eee;
+  box-sizing: border-box;
+
+  background: #f3f0ea; /* 背景色 */
+  padding: 30px;
+  color: #707070; /* 文字の色 */
+}
+
+/* ヘッダーのメニューの設定*/
+.header1 .header-menu a {
+  text-decoration: none;
+  color: #707070;
+  padding: 0 10px;
+}
+
+/*メニューがホバーしたとき*/
+.header1 .header-menu a:hover {
+  border-bottom: 2px solid #fd5a5f;
+  padding-bottom: 10px;
+}
+
+/*アクティブメニュー*/
+.header1 .header-menu a.active {
+  border-bottom: 2px solid #785afd;
+  padding-bottom: 10px;
+}
+/*ロゴの設定*/
+.header1 .header-logo {
+  width: 150px;
+  height: auto;
+}
+
+.header1 .header-logo img {
+  max-width: 100%;
+}
