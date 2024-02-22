@@ -6,6 +6,7 @@
     <title>タイトル</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/header_style.css" />
+    <link rel="stylesheet" href="css/select.css" />
     <link rel="stylesheet" href="/css/header.css" />
 
     <script src="js/select.js" async></script>
@@ -62,67 +63,23 @@
         <a href="#">Contact</a>
       --></div>
     </div>
-    <h1>- 全体像 -</h1>
-    <div class="wrapper1">
-      <div class="container1">
-        <div class="card1">
-          <img src="img/取扱説明書.png" alt="" />
-          <div class="text">トリセツ</div>
-        </div>
-      </div>
-      <div class="container1">
-        <div class="card1">
-          <img src="img/履歴書.png" alt="" />
-          <div class="text">履歴書</div>
-        </div>
-      </div>
-    </div>
-    <h1>- 項目 -</h1>
-    <div class="wrapper2">
-      <div class="card2">
-        <img src="img/履歴書.png" alt="" />
-        <div class="text">基本情報</div>
-      </div>
-      <div class="card2">
-        <img src="img/履歴書.png" alt="" />
-        <div class="text">性格</div>
-      </div>
-      <div class="card2">
-        <img src="img/履歴書.png" alt="" />
-        <div class="text">趣味</div>
-      </div>
-      <div class="card2">
-        <img src="img/履歴書.png" alt="" />
-        <div class="text">実績</div>
-      </div>
-      <div class="card2">
-        <img src="img/履歴書.png" alt="" />
-        <div class="text">スキル</div>
-      </div>
-      <div class="card2">
-        <img src="img/履歴書.png" alt="" />
-        <div class="text">資格</div>
-      </div>
-      <div class="card2">
-        <img src="img/履歴書.png" alt="" />
-        <div class="text">ヒストリー</div>
-      </div>
-      <div class="card2">
-        <img src="img/履歴書.png" alt="" />
-        <div class="text">None</div>
-      </div>
-      <div class="card2">
-        <img src="img/履歴書.png" alt="" />
-        <div class="text">大事なこと</div>
-      </div>
-      <div class="card2">
-        <img src="img/履歴書.png" alt="" />
-        <div class="text">夢</div>
-      </div>
-      <div class="card2">
-        <img src="img/履歴書.png" alt="" />
-        <div class="text">SNS集</div>
-      </div>
+    <h1>- 写真 -</h1>
+    <!-- タグ選択用のボタン -->
+    <button class="filter-button" data-tag="旅行">旅行</button>
+    <button class="filter-button" data-tag="熊本">熊本</button>
+    <button class="filter-button" data-tag="友達">友達</button>
+    <button class="filter-button" data-tag="みちゃ">みちゃ</button>
+    <button class="filter-button" data-tag="家族">家族</button>
+
+    <!-- 表示要素 -->
+    <div id="elements">
+      <div data-tags="旅行 熊本" class="element">表示要素A</div>
+      <div data-tags="旅行 鳥取" class="element">表示要素B</div>
+      <div data-tags="旅行 熊本" class="element">表示要素C</div>
+      <div data-tags="熊本 友達" class="element">表示要素D</div>
+      <div data-tags="友達 みちゃ" class="element">表示要素E</div>
+      <div data-tags="みちゃ" class="element">表示要素F</div>
+      <div data-tags="家族" class="element">表示要素G</div>
     </div>
   </body>
 </html>

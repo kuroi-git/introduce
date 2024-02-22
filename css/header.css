@@ -1,0 +1,140 @@
+/*グローバルナビメニュー*/
+#gnav ul {
+  list-style: none;
+  padding-left: 0;
+}
+#gnav ul li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #820184;
+}
+#gnav ul li a:hover {
+  opacity: 0.7;
+}
+#gnav > ul {
+  display: flex;
+}
+#gnav > ul > li {
+  width: 6rem;
+  position: relative;
+  padding: 10px 0;
+}
+#gnav > ul > li > a {
+  padding: 5px 10px;
+}
+
+/*子階層*/
+.gnav_child {
+  visibility: hidden; /*最初は非表示*/
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 95%;
+  background: #fff;
+  -webkit-box-shadow: 0px 3px 10px 2px rgba(25, 26, 26, 0.3);
+  box-shadow: 0px 3px 10px 2px rgba(25, 26, 26, 0.3);
+  border-radius: 5px;
+  z-index: 0;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1); /*アニメーションの時間とイージング設定*/
+  transform: scaleY(
+    0
+  ); /*ドロップダウンアニメーションのために高さを０にしておく*/
+  transform-origin: center top; /*transformの基準点を設定　上部中央*/
+  opacity: 0; /*フェイドインのアニメーションのために透明度０にする*/
+}
+
+/*子階層ドロップダウン*/
+#gnav > ul > li:hover .gnav_child {
+  /*親階層の<li>にマウスオンしたとき*/
+  visibility: visible; /*表示する*/
+  opacity: 1; /*フェイドイン 透明度を１に*/
+  transform: scaleY(1); /*ドロップダウン 高さを１に*/
+}
+
+/*子階層の▲の装飾*/
+.gnav_child::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #fff transparent;
+  filter: drop-shadow(0 0px 5px rgba(25, 26, 26, 0.3));
+  z-index: -1;
+}
+.gnav_child li {
+  background: #fff;
+}
+
+/*子階層の背景の角丸設定*/
+.gnav_child > li:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.gnav_child > li:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.gnav_child a {
+  padding: 10px 5px;
+}
+
+/*孫階層*/
+.gnav_gchild {
+  visibility: hidden;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 100%;
+  -webkit-box-shadow: 0px 3px 10px 2px rgba(25, 26, 26, 0.3);
+  box-shadow: 0px 3px 10px 2px rgba(25, 26, 26, 0.3);
+  background: #fff;
+  border-radius: 5px;
+  z-index: 0;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: scaleX(0);
+  transform-origin: left top;
+  opacity: 0;
+}
+
+/*孫階層のスライドイン*/
+.gnav_child li:hover .gnav_gchild {
+  visibility: visible;
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/*孫階層の◀の装飾*/
+.gnav_gchild::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #fff transparent transparent;
+  filter: drop-shadow(0 0px 5px rgba(25, 26, 26, 0.3));
+  z-index: -1;
+}
+
+/*孫階層の角丸設定*/
+.gnav_gchild > li:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.gnav_gchild > li:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

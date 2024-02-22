@@ -4,7 +4,7 @@
   display: flex; /* 要素の表示方法に関するプロパティ flex:横並び */
   justify-content: space-between; /* フレックスアイテムの主軸方向の揃え位置を指定する space-between:余白をもって等間隔に配置  */
   align-items: center;
-  position: fixed;
+  position: sticky;
   z-index: 999;
   top: 0;
   left: 0;
@@ -24,7 +24,7 @@
   color: #707070;
   padding: 0 10px;
 }
-
+＾＾＾」
 /*メニューがホバーしたとき*/
 .header1 .header-menu a:hover {
   border-bottom: 2px solid #fd5a5f;

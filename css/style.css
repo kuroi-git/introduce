@@ -8,3 +8,82 @@ body {
   -webkit-font-smoothing: antialiased;
   margin: 0%;
 }
+
+h1 {
+  color: #364e96; /*文字色*/
+  padding: 0.2em 0; /*上下の余白*/
+  text-align: center;
+  border-top: solid 3px #364e96; /*上線*/
+  border-bottom: solid 3px #364e96; /*下線*/
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.wrapper1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(11.25rem, 100%), 1fr));
+
+  grid-gap: 1rem;
+  background-color: #a9bbf1;
+  margin-left: 20%;
+  margin-right: 20%;
+  gap: 10px;
+}
+
+.container1 {
+  background-color: #f8f8ff;
+}
+
+.card1 {
+  display: flex;
+  background-color: #f9fbfd;
+  padding: 1em; /*内側余白*/
+  border: solid 3px #deebf7; /*線の種類・太さ・色*/
+  gap: 10px;
+}
+
+.card1 img {
+  width: 20%;
+  background-color: #e0f8d8;
+}
+.card1 .text {
+  width: 80%;
+  font-size: calc(1em + 1vw);
+  text-align: center;
+  background-color: #f7ddc4;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(8rem, 100%), 1fr));
+
+  grid-gap: 1rem;
+  background-color: #a9bbf1;
+  margin-left: 20%;
+  margin-right: 20%;
+  gap: 10px;
+}
+
+.container2 {
+  display: flex;
+  gap: 10px;
+  background-color: #f8f8ff;
+}
+.card2 {
+  background-color: #f9fbfd;
+  padding: 1em; /*内側余白*/
+  border: solid 3px #deebf7; /*線の種類・太さ・色*/
+  gap: 10px;
+}
+.card2 img {
+  width: 100%;
+  background-color: #e0f8d8;
+}
+.card2 .text {
+  font-size: calc(1em + 1vw);
+  text-align: center;
+  background-color: #f7ddc4;
+  align-items: center;
+}
