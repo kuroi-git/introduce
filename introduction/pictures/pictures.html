@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="/css/header_style.css" />
     <link rel="stylesheet" href="css/select.css" />
     <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="css/pictures.css" />
 
-    <script src="js/select.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/introduction/pictures/js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/D:\Mysite\Introduce\introduce\introduction\pictures\js\masonry.pkgd.min.js"></script>
 
     <!-- 文字化け防止 -->
   </head>
@@ -63,6 +67,17 @@
         <a href="#">Contact</a>
       --></div>
     </div>
+
+    <div class="wrap">
+      <ul class="demo01 js-demo01">
+        <li class="item js-item"><img src="img/画像1.jpg" /></li>
+        <li class="item js-item"><img src="img/画像2.jpg" /></li>
+        <li class="item js-item"><img src="img/画像3.jpg" /></li>
+        <li class="item js-item"><img src="img/画像4.jpg" /></li>
+        <li class="item js-item"><img src="img/画像5.jpg" /></li>
+      </ul>
+    </div>
+
     <h1>- 写真 -</h1>
     <!-- タグ選択用のボタン -->
     <div class="wrapper2">
@@ -72,17 +87,173 @@
       <button class="filter-button" data-tag="みちゃ">みちゃ</button>
       <button class="filter-button" data-tag="家族">家族</button>
     </div>
-
+    <div class="box">
+      <div class="inner">
+        <img src="img/画像1.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像2.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像3.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像4.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像5.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像6.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像7.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像8.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像9.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像10.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像11.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像12.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像13.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像14.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像15.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像16.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像17.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像18.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像19.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像20.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像21.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像22.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像23.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像24.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像25.jpg" />
+      </div>
+      <div class="inner">
+        <img src="img/画像26.jpg" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="list">
+        <a href="" class="wrap-element">
+          <article>
+            <img src="img/画像1.jpg" />
+          </article>
+        </a>
+        <a href="" class="wrap-element">
+          <article>
+            <img src="img/画像2.jpg" alt="" />
+          </article>
+        </a>
+        <a href="" class="wrap-element">
+          <article>
+            <img src="img/画像3.jpg" alt="" />
+          </article>
+        </a>
+        <a href="" class="wrap-element">
+          <article>
+            <img src="img/画像4.jpg" alt="" />
+          </article>
+        </a>
+        <a href="" class="wrap-element">
+          <article>
+            <img src="img/画像5.jpg" alt="" />
+          </article>
+        </a>
+        <a href="" class="wrap-element">
+          <article>
+            <img src="img/画像6.jpg" alt="" />
+          </article>
+        </a>
+        <a href="" class="wrap-element">
+          <article>
+            <img src="img/画像7.jpg" alt="" />
+          </article>
+        </a>
+        <a href="" class="wrap-element">
+          <article>
+            <img src="img/画像8.jpg" alt="" />
+          </article>
+        </a>
+      </div>
+    </div>
     <!-- 表示要素 -->
     <div id="elements">
       <div class="wrapper2">
-        <div data-tags="旅行 熊本" class="element">表示要素A</div>
-        <div data-tags="旅行 鳥取" class="element">表示要素B</div>
-        <div data-tags="旅行 熊本" class="element">表示要素C</div>
-        <div data-tags="熊本 友達" class="element">表示要素D</div>
-        <div data-tags="友達 みちゃ" class="element">表示要素E</div>
-        <div data-tags="みちゃ" class="element">表示要素F</div>
-        <div data-tags="家族" class="element">表示要素G</div>
+        <div data-tags="長崎 チームラボ" class="element">
+          <img src="img/2021.10.14 武雄温泉 チームラボ - _DSC9290.jpg" />
+        </div>
+        <div data-tags="久住" class="element">
+          <img src="img/2021.11.06 久住登山 - _DSC1900.jpg" />
+        </div>
+        <div data-tags="久住" class="element">
+          <img src="img/2021.11.06 久住登山 - _DSC2013.jpg" />
+        </div>
+        <div
+          data-tags="長崎 花火 ハウステンボス 九州一花火大会"
+          class="element"
+        >
+          <img src="img/2021.11.21 長崎旅行 - _DSC2905-Edit.jpg" />
+        </div>
+        <div data-tags="ポートレート セルフポートレート" class="element">
+          <img src="img/2024.02.06 ﾊｼﾞﾒﾏｼﾃ - _DSC5728.jpg" />
+        </div>
+        <div data-tags="熊本 夜景" class="element">
+          <img src="img/2021.09.16 夜景 - _DSC8308.jpg" />
+        </div>
+        <div data-tags="熊本 花火 グリーンランド" class="element">
+          <img src="img/2021.07.10 グリーンランド花火 - _DSC7123-2.jpg" />
+        </div>
+        <div data-tags="海 ボート 長部田海床路" class="element">
+          <img
+            src="img/2021.06.27 偵察 岩井くん のんちゃん - _DSC7009-強化-NR.jpg"
+          />
+        </div>
+        <div data-tags="桜" class="element">
+          <img src="img/2021.04.05 竹田城跡 - _DSC6522.jpg" />
+        </div>
+        <div data-tags="熊本 黒川温泉 湯明かり" class="element">
+          <img src="img/2021.03.07 湯明かり - _DSC5212-3.jpg" />
+        </div>
+        <div data-tags="阿蘇 熊本 雲海" class="element">
+          <img
+            src="img/2020.10.3 雲海 in 大観峰 with 島田 - _DSC0243-強化-NR.jpg"
+          />
+        </div>
       </div>
     </div>
   </body>

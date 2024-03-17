@@ -1,0 +1,32 @@
+img {
+  /* ピリオドがない場合、タグになる */
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  box-sizing: border-box;
+  padding: 35px;
+  height: 100px;
+  background-color: #a9beae;
+  text-align: center;
+  font-size: 24px;
+  color: #f9f9f9;
+}
+
+.wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.demo01 {
+  margin: 0 auto;
+}
+
+.item {
+  width: 200px;
+}
+
+.item img {
+  width: 100%;
+}
