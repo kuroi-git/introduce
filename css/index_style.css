@@ -1,0 +1,17 @@
+.card-container{
+    display:flex;
+    max-width: 80%;
+    height: 200px;
+    margin: auto 20%;
+    background-color: aqua;
+}
+
+.card-img img{
+    height: 100%;
+    width: auto;
+}
+
+.card-text{
+    width:100%;
+    margin: 0px 20px;
+}
