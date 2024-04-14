@@ -1,0 +1,48 @@
+/* id属性  <p id="type1">ほげほげほげほげ</p>*/
+/* 1ページに一回きり、ページ内リンクを作れる*/
+#type1 {
+  font-size: 20px;
+  color: red;
+}
+
+/* class属性 <p class="type2">ほにゃほにゃほにゃ</p> */
+.type2 {
+  font-size: 24px;
+  color: blue;
+}
+
+/* タグ属性 <type3>ほにゃほにゃほにゃ</p> */
+.type3 {
+  font-size: 24px;
+  color: blue;
+	@media screen and (max-width: 767px) {
+		/* ここに横幅が767px以下の時に発動するスタイルを記述 */
+		}
+		
+		@media screen and (min-width: 767px) {
+		/* ここに横幅が767pxより大きい時に発動するスタイルを記述 */
+		}
+}
+
+
+.contents {
+  display: flex;		/* 横並べ */
+  flex-wrap: wrap;	
+}
+.item {
+  width: calc(90% / 4);
+  padding: 20px 10px;
+  text-align: center;
+}
+
+#header {
+	background-color: red;
+}
+
+body{
+	background-color: #eff0f3;
+}
+.W-picture {
+  width: 100%;
+}
+
