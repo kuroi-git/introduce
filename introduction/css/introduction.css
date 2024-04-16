@@ -1,0 +1,8 @@
+.aspect-ratio-block {
+  width: 50%;
+	background-color: gray;
+  aspect-ratio: 1 / 1;
+  border: solid 7px #353535;
+	margin: 2%;
+  text-align: center;
+}
