@@ -1,90 +1,159 @@
 <!DOCTYPE html>
-<!-- HTML文書ですよってやつ -->
 
 <html lang="ja">
-  <!-- ここからがhtmlですよ -->
   <head>
-    <!-- 主にメタデータ、CSS、JSの場所 -->
     <link rel="stylesheet" href="/css/mainStyle.css" />
+    <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="css/introduction.css" />
     <meta charset="UTF-8" />
-    <!-- 文字コード -->
     <title>黒い白井</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <!-- 描写 -->
     <header id="header">
-      <h1>ヘッダー部分</h1>
+      <a href="/index.html" style="flex: 1">
+        <img src="/img/logo.png" alt="ロゴ" style="float: left; height: 100%" />
+      </a>
+      <div class="header-content" style="flex: 1">
+        <div class="dropdown">
+          <a href="/index.html" class="plain-link"
+            ><span class="center-text">TOP</span>
+          </a>
+        </div>
+        <div class="dropdown">
+          <a href="/introduction/introduction.html" class="plain-link"
+            ><span class="center-text">自己紹介</span>
+          </a>
+          <div class="dropdown-content">
+            <a
+              href="/introduction/"
+              id="link1"
+              style="border-top: 1px solid #9b3737"
+              >取扱説明書</a
+            >
+            <a href="#" id="link2">履歴書</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="/creation/creation.html" class="plain-link">
+            <span>成果物</span>
+          </a>
+          <div class="dropdown-content">
+            <a
+              href="/introduction/"
+              id="link1"
+              style="border-top: 1px solid #9b3737"
+              >写真集</a
+            >
+            <a href="#" id="link2">ソフトウェア</a>
+            <a href="#" id="link2">名言集</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="/inquiry/inquiry.html" class="plain-link">
+            <span>お問い合わせ</span>
+          </a>
+        </div>
+      </div>
     </header>
-    <div style="margin:10%"> <!-- サイトの内容 -->
-      <h1 class="line2_updown">－全体像－</h1>
-      <div class="contents">
-        <div class="item sidebox" style="flex:1;">
-          <img style="width: 33%; height: auto; flex:1; margin:0" src="img\取扱説明書.png"/>
-          <h2 style="text-align: center; flex:2;">取扱説明書</h2>
+    <div class="wrapper">
+      <div class="linked-big-contents">
+        <div style="flex: 1">
+          <a href="https://www.example.com/manual">
+            <div class="img-name">
+              <div style="flex: 1">
+                <img src="img/取扱説明書.png" alt="取扱説明書" />
+              </div>
+              <div style="flex: 0.3"></div>
+              <div style="flex: 2">
+                <h1>トリセツ</h1>
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="item sidebox" style="flex:1;">
-          <img style="width: 33%; flex:1;" src="img\履歴書.png"/>
-          <h2 style="text-align: center; flex:2;">履歴書</h2>
-        </div>
-			</div>
-      <h1 class="line2_updown">－項目－</h1>
-      <div class="contents">
-        <div class="aspect-ratio-block" style="flex:1;">
-          <img class="W-picture" src="img\aboutme.png"/>
-          <h3>基本情報</h3>
-        </div>
-        <div class="aspect-ratio-block" style="flex:1;">
-          <img class="W-picture" src="img\aboutme.png"/>
-          <h3>性格</h3>
-        </div>
-        <div class="aspect-ratio-block" style="flex:1;">
-          <img class="W-picture" src="img\aboutme.png"/>
-          <h3>趣味</h3>
-        </div>
-        <div class="aspect-ratio-block" style="flex:1;">
-          <img class="W-picture" src="img\aboutme.png"/>
-          <h3>実績</h3>
-        </div>
-      </div>
-      <div class="contents">
-        <div class="aspect-ratio-block" style="flex:1;">
-          <img class="W-picture" src="img\aboutme.png"/>
-          <h3>スキル</h3>
-        </div>
-        <div class="aspect-ratio-block" style="flex:1;">
-          <img class="W-picture" src="img\aboutme.png"/>
-          <h3>資格</h3>
-        </div>
-        <div class="aspect-ratio-block" style="flex:1;">
-          <img class="W-picture" src="img\aboutme.png"/>
-          <h3>ストーリー</h3>
-        </div>
-        <div class="aspect-ratio-block" style="flex:1;">
-          <img class="W-picture" src="img\aboutme.png"/>
-          <h3>経歴</h3>
+        <!--
+      <div style="margin: 5%;"></div>
+      -->
+        <div style="flex: 1">
+          <div class="img-name">
+            <div style="flex: 1">
+              <img src="img/履歴書.png" alt="履歴書" />
+            </div>
+            <div style="flex: 0.3"></div>
+            <div style="flex: 2">
+              <h1>履歴書</h1>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="contents">
-        <div class="aspect-ratio-block" style="flex:1;">
-          <img class="W-picture" src="img\aboutme.png"/>
-          <h3>大事なこと</h3>
+      <div class="popup-contents">
+        <div class="popup-content">
+          <a href="https://www.example.com/manual">
+            <img src="img/取扱説明書.png" alt="基本情報" />
+            <p>基本情報</p>
+          </a>
         </div>
-        <div class="aspect-ratio-block" style="flex:1;">
-          <img class="W-picture" src="img\aboutme.png"/>
-          <h3>夢</h3>
+        <div class="popup-content">
+          <a href="https://www.example.com/manual">
+            <img src="img/取扱説明書.png" alt="性格" />
+            <p>性格</p>
+          </a>
         </div>
-        <div class="aspect-ratio-block" style="flex:1;">
-          <img class="W-picture" src="img\aboutme.png"/>
-          <h3>SNS集</h3>
+        <div class="popup-content">
+          <a href="https://www.example.com/manual">
+            <img src="img/取扱説明書.png" alt="趣味" />
+            <p>趣味</p>
+          </a>
         </div>
-        <div class="aspect-ratio-block" style="flex:1;">
-          <img class="W-picture" src="img\aboutme.png"/>
-          <h3>None</h3>
+        <div class="popup-content">
+          <a href="https://www.example.com/manual">
+            <img src="img/取扱説明書.png" alt="実績" />
+            <p>実績</p>
+          </a>
+        </div>
+        <div class="popup-content">
+          <a href="https://www.example.com/manual">
+            <img src="img/スキル.png" alt="スキル" />
+            <p>スキル</p>
+          </a>
+        </div>
+        <div class="popup-content">
+          <a href="https://www.example.com/manual">
+            <img src="img/取扱説明書.png" alt="資格" />
+            <p>資格</p>
+          </a>
+        </div>
+        <div class="popup-content">
+          <a href="https://www.example.com/manual">
+            <img src="img/取扱説明書.png" alt="ストーリー" />
+            <p>ストーリー</p>
+          </a>
+        </div>
+        <div class="popup-content">
+          <a href="https://www.example.com/manual">
+            <img src="img/取扱説明書.png" alt="経歴" />
+            <p>経歴</p>
+          </a>
+        </div>
+        <div class="popup-content">
+          <a href="https://www.example.com/manual">
+            <img src="img/取扱説明書.png" alt="大事なこと" />
+            <p>大事なこと</p>
+          </a>
+        </div>
+        <div class="popup-content">
+          <a href="https://www.example.com/manual">
+            <img src="img/夢.png" alt="夢" />
+            <p>夢</p>
+          </a>
+        </div>
+        <div class="popup-content">
+          <a href="https://www.example.com/manual">
+            <img src="img/取扱説明書.png" alt="アカウント集" />
+            <p>アカウント集</p>
+          </a>
         </div>
       </div>
     </div>
-    
   </body>
 </html>

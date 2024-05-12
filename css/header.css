@@ -1,0 +1,116 @@
+/* ヘッダーのスタイル */
+header {
+  height: 50px;
+  background-color: #d5fff4;
+  padding: 5px;
+  display: flex;
+}
+/* ヘッダーの右側のスタイル */
+.header-content {
+  /*justify-content: space-around;*/
+  position: relative;
+  text-align: right;
+  height: 100%;
+  display: flex;
+}
+
+/* ドロップダウンが出るところ */
+.dropdown {
+  position: relative; /* 文書内で要素がどのように配置されるかを設定: 相対位置 */
+  display: inline-block; /* 子要素のために使用されるレイアウト: インラインブロック */
+  text-align: center; /* テキストの水平方向の配置: 中央 */
+  padding: 10px; /* 要素の水平方向の内側の余白: 10px */
+  /*min-width: 70px;		/* 要素の最小幅: 160px */
+}
+.linkbox {
+  position: relative;
+  border: solid 2px #000000;
+}
+.linkbox a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width: 100%;
+}
+/*
+.dropdown a:hover{/* マウスオーバー時に色変更
+  opacity: 0.1;
+  background-color: #000000;
+}
+*/
+/* ドロップダウンメニュー */
+.dropdown-content {
+  display: none; /* 要素を非表示にする */
+  position: absolute; /* 要素を相対位置にする */
+  width: 100%; /* 要素の最小幅: 160px */
+  top: 100%; /* 要素の上部からの位置: 100% */
+
+  z-index: 1;
+  background-color: #f9f9f9; /* メニューの背景色 */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* 影の効果 */
+  left: 0%; /* 要素の左端からの位置: 0 */
+  right: 0; /* 要素の右端からの位置: 0 */
+  width: 100%; /* 要素の幅: 100% 親要素に依存 */
+}
+
+/* dropdownクラスにマウスを乗せたときのdropdown-contentに関して */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* dropdown-content内のタグa */
+.dropdown-content a {
+  color: black; /* リンクのテキスト色 */
+  padding: 12px 16px; /* リンクのパディング */
+  text-decoration: none; /* テキストの装飾をなしに */
+  display: block; /* ブロック要素として表示 */
+  border: 1px solid #9b3737; /* 枠線を追加 */
+  border-top: none;
+}
+
+/* dropdown-content内のタグaにマウスを乗せたとき */
+.dropdown-content a:hover {
+  background-color: #f1f1f1; /* リンクにマウスを乗せたときの背景色 */
+}
+
+.header-content .dropdown {
+  width: 20%;
+  border-left: 1px solid #4e4e4e;
+  border-right: 1px solid #4e4e4e;
+}
+
+a {
+  color: inherit; /* リンクの色を親要素と同じにする */
+  text-decoration: none; /* 下線を消す */
+}
+
+.center-text {
+  text-align: center;
+}
+
+.hamburger-menu-button {
+  display: none;
+  background-size: cover; /* 繰り返し表示を防ぐ */
+  width: 50px;
+  height: 50px;
+}
+@media (max-width: 767px) {
+  .header-content {
+    display: none;
+  }
+  .hamburger-menu-button {
+    display: inline-block;
+    background-image: url("/img/hamburger-menu-button.png");
+  }
+  .hamburger-menu-button img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .hamburger-menu-button:active {
+    display: inline-block;
+    width: 50px;
+    background-image: url("/img/aboutme.png");
+  }
+}

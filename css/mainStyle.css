@@ -34,6 +34,7 @@
 .contents {
   display: flex; /* 横並べ */
   flex-wrap: wrap;
+  background-color: aliceblue;
 }
 .item {
   width: calc(90% / 4);
@@ -41,13 +42,19 @@
   text-align: center;
 }
 
-#header {
-  background-color: red;
-}
-
 body {
+	margin: 0;
+	padding: 0;
   background-color: #eff0f3;
 }
+
+.wrapper {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+  background-color: #e5e8f1;
+}
+
 .W-picture {
   width: 100%;
 }

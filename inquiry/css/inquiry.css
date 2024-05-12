@@ -1,0 +1,37 @@
+.sns-icons {
+	position: relative;
+  display: flex; /* 項目を横並びにする */
+  flex-wrap: wrap; /* 項目が横幅を超えた場合に折り返す */
+  width: 60%;
+  justify-content: space-around; /* 項目を中央寄せにする */
+  background-color: aqua;
+  border-radius: 30px;
+  padding: 2%;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+.sns-icons img {
+	width: 200px;
+	margin: 10px;
+	flex: 1;
+}
+
+@media (max-width: 1020px) and (min-width: 768px) {
+  .sns-icons {
+    width: 70%;
+  }
+  .sns-icons img {
+		flex: 1;
+    width: 150px; /* ウィンドウの横幅が400px以上の場合には項目の幅を50%に設定 */
+  }
+}
+
+@media (max-width: 767px) {
+  .sns-icons {
+    width: 80%;
+  }
+  .sns-icons img {
+    width: 75px; /* ウィンドウの横幅が600px以上の場合には項目の幅を33.33%に設定 */
+  }
+}
