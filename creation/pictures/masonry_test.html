@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!-- HTML文書ですよってやつ -->
+
+<html lang="ja">
+  <!-- ここからがhtmlですよ -->
+  <head>
+    <!-- 主にメタデータ、CSS、JSの場所 -->
+    <link rel="stylesheet" href="/css/mainStyle.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="css/pictures.css" />
+    <meta charset="UTF-8" />
+    <!-- 文字コード -->
+    <title>黒い白井</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- 描写 -->
+    <header id="header">
+      <!-- ロゴを追加 -->
+      <a href="/index.html" style="flex: 0.5">
+        <img src="/img/logo.png" alt="ロゴ" style="float: left; height: 100%" />
+      </a>
+      <div style="flex: 0.5" class="linkbox">
+        <a href="https://www.google.co.jp"></a>
+      </div>
+      <!-- メニュー部分 -->
+      <div class="header-content" style="flex: 1">
+        <div class="dropdown">
+          <a href="/index.html" class="plain-link"
+            ><span class="center-text">TOP</span>
+          </a>
+        </div>
+        <!-- 自己紹介 -->
+        <div class="dropdown">
+          <a href="/introduction/introduction.html" class="plain-link"
+            ><span class="center-text">自己紹介</span>
+          </a>
+          <div class="dropdown-content">
+            <a
+              href="/introduction/"
+              id="link1"
+              style="border-top: 1px solid #9b3737"
+              >取扱説明書</a
+            >
+            <a href="#" id="link2">履歴書</a>
+          </div>
+        </div>
+        <!-- 成果物 -->
+        <div class="dropdown">
+          <a href="/creation/creation.html" class="plain-link">
+            <span>成果物</span>
+          </a>
+          <div class="dropdown-content">
+            <a
+              href="/creation/pictures/pictures.html"
+              id="link1"
+              style="border-top: 1px solid #9b3737"
+              >写真集</a
+            >
+            <a href="#" id="link2">ソフトウェア</a>
+            <a href="#" id="link2">名言集</a>
+          </div>
+        </div>
+        <!-- 問い合わせ -->
+        <div class="dropdown">
+          <a href="/inquiry/inquiry.html" class="plain-link">
+            <span>お問い合わせ</span>
+          </a>
+        </div>
+      </div>
+      <a href="#" class="hamburger-menu-button"></a>
+    </header>
+    <!-- 一番上 -->
+    <div class="wrapper">
+      <div style="display: flex; justify-content: center; padding-top: 20px">
+        <button onclick="filter('all')" class="select_pictures_button">
+          All
+        </button>
+        <button onclick="filter('landscape')" class="select_pictures_button">
+          風景画
+        </button>
+        <button onclick="filter('firework')" class="select_pictures_button">
+          花火
+        </button>
+        <button onclick="filter('portrait')" class="select_pictures_button">
+          ポートレート
+        </button>
+      </div>
+      <div class="masonry">
+        <div class="masonry-item">
+          <img src="img/画像0.jpg" alt="0" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像1.jpg" alt="1" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像2.jpg" alt="2" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像3.jpg" alt="3" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像4.jpg" alt="4" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像5.jpg" alt="5" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像6.jpg" alt="6" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像7.jpg" alt="7" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像8.jpg" alt="8" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像9.jpg" alt="9" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像10.jpg" alt="10" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像11.jpg" alt="11" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像12.jpg" alt="12" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像13.jpg" alt="13" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像14.jpg" alt="14" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像15.jpg" alt="15" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像16.jpg" alt="16" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像17.jpg" alt="17" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像18.jpg" alt="18" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像19.jpg" alt="19" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像20.jpg" alt="20" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像21.jpg" alt="21" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像22.jpg" alt="22" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像23.jpg" alt="23" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像24.jpg" alt="24" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像25.jpg" alt="25" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像26.jpg" alt="26" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像27.jpg" alt="27" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像28.jpg" alt="28" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像29.jpg" alt="29" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像30.jpg" alt="30" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像31.jpg" alt="31" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像32.jpg" alt="32" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像33.jpg" alt="33" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像34.jpg" alt="34" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像35.jpg" alt="35" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像36.jpg" alt="36" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像37.jpg" alt="37" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像38.jpg" alt="38" />
+        </div>
+        <div class="masonry-item">
+          <img src="img/画像39.jpg" alt="39" />
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/masonry.pkgd.min.js"></script>
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+  </body>
+  <script src="js/pictures.js"></script>
+</html>
+
+<!--
+        <div><img src="img/画像1.jpg" alt="1" /></div>
+        <div><img src="img/画像2.jpg" alt="2" /></div>
+        <div><img src="img/画像3.jpg" alt="3" /></div>
+        <div><img src="img/画像4.jpg" alt="4" /></div>
+        <div><img src="img/画像5.jpg" alt="5" /></div>
+        <div><img src="img/画像6.jpg" alt="6" /></div>
+        <div><img src="img/画像7.jpg" alt="7" /></div>
+        <div><img src="img/画像8.jpg" alt="8" /></div>
+        <div><img src="img/画像9.jpg" alt="9" /></div>
+        <div><img src="img/画像10.jpg" alt="10" /></div>
+        <div><img src="img/画像11.jpg" alt="11" /></div>
+        <div><img src="img/画像12.jpg" alt="12" /></div>
+        <div><img src="img/画像13.jpg" alt="13" /></div>
+        <div><img src="img/画像14.jpg" alt="14" /></div>
+        <div><img src="img/画像15.jpg" alt="15" /></div>
+        <div><img src="img/画像16.jpg" alt="16" /></div>
+        <div><img src="img/画像17.jpg" alt="17" /></div>
+        <div><img src="img/画像18.jpg" alt="18" /></div>
+        <div><img src="img/画像19.jpg" alt="19" /></div>
+        <div><img src="img/画像20.jpg" alt="20" /></div>
+        <div><img src="img/画像21.jpg" alt="21" /></div>
+        <div><img src="img/画像22.jpg" alt="22" /></div>
+        -->

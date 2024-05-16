@@ -1,0 +1,39 @@
+.pictures-list {
+  column-count: 4; /* こいつが肝 */
+  height: auto !important; /* 検証として高さは可変（auto）に設定しているだけです。実際は不要です。 */
+  padding: 5%;
+}
+
+.pictures-list > a {
+  height: auto !important; /* 検証として高さは可変（auto）に設定しているだけです。実際は不要です。 */
+  break-inside: avoid; /* こいつが肝 */
+  color: #fff;
+}
+.pictures-list img {
+  width: 100%;
+}
+
+.select_pictures_button {
+  
+  width: 100px;
+  height: 30px;
+  margin: 5px 5px;
+}
+
+@media (max-width: 767px) {
+  .pictures-list {
+    column-count: 3; /* こいつが肝 */
+  }
+  .masonry-item {
+    width: 30%;
+    margin-bottom: 3rem;
+  }
+  
+}
+
+@media (max-width: 450px) {
+  .pictures-list {
+    column-count: 2; /* こいつが肝 */
+  }
+  
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- HTML文書ですよってやつ -->
+
+<html lang="ja">
+  <!-- ここからがhtmlですよ -->
+  <head>
+    <!-- 主にメタデータ、CSS、JSの場所 -->
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="/css/mainStyle.css" />
+    <meta charset="UTF-8" />
+    <!-- 文字コード -->
+    <title>黒い白井</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header class="header"> <!-- ヘッダー部分 -->
+      <div class="header__logo">  <!-- ヘッダーのロゴ -->
+        <a href="/index.html">
+          <img src="/img/logo.png" alt="ロゴ" />
+        </a>
+      </div>
+      <div class="navi__list" style="flex: 1">
+        <a href="/template/">テンプレート</a>
+        <div class="dropdown__lists">
+          <div class="dropdown__list"><a href="/template/template.html"></a></div>
+          <div class="dropdown__list"><a href="/template/header.html">header</a></div>
+          <div class="dropdown__list"><a href="/template/popup.html">popup</a></div>
+        </div>
+      </div>
+      <div class="header__navi" style="flex: 1">  <!-- ヘッダーのナビ部分 -->
+        <div class="navi__list" style="flex: 1">  <!-- 各ドロップダウンの項目 -->
+          <a href="/index.html">TOP</a>
+        </div>
+        <div class="navi__list" style="flex: 1">
+          <a href="/introduction/introduction.html">自己紹介</a>
+          <div class="dropdown__lists">
+            <div class="dropdown__list"><a href="/introduction/">取扱説明書</a></div>
+            <div class="dropdown__list"><a href="/introduction/">履歴書</a></div>
+          </div>
+        </div>
+        <div class="navi__list" style="flex: 1">
+          <a href="/creation/creation.html">成果物</a>
+          <div class="dropdown__lists">
+            <div class="dropdown__list"><a href="/creation/pictures/pictures.html">写真集</a></div>
+            <div class="dropdown__list"><a href="#">ソフトウェア</a></div>
+            <div class="dropdown__list"><a href="#">名言集</a></div>
+          </div>
+        </div>
+        <div class="navi__list" style="flex: 1">  <!-- 各ドロップダウンの項目 -->
+          <a href="/inquiry/inquiry.html">お問い合わせ</a>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

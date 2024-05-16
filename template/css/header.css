@@ -1,0 +1,125 @@
+.header {
+  display: flex;  /* 横並びに */
+  background-color: #e5f0f8;
+  text-align: center;
+  height: 60px;   /* 高さ(迷い中) */
+}
+
+.header__logo {
+  flex: 0.5;
+}
+
+.header__logo img {
+  height: 50px;
+  float: left;        /* 左寄せ */
+  margin-left: 10px;  
+  padding: 5px;       /* (header.height-logo.height)/2 */
+  align-items: center;  /* ならない。。。 */
+  flex: 0.5;
+}
+
+.header__navi {
+  background-color: #e5f0f8;
+  position: relative; /* 相対位置 */
+  transition: all 0.3s; /* 0.3秒で変化 */
+  display: flex;
+  border-left: 1px solid #fff; /* 左側の境界線 */
+}
+
+.header__navi:hover {
+  border-left: 0px solid #fff; /* 左側の境界線 */
+  transition: all 0.0s; /* 0.3秒で変化 */
+}
+
+.navi__list {
+  background-color: #e5f0f8;
+  position: relative;
+  transition: all 0.3s; /* 0.3秒で変化 */
+  height: 60px;
+}
+.navi__list:hover { /* ホバーしたら */
+  background-color: #0071bb;
+}
+
+/* リストの境界線 */
+.navi__list:not(:first-child)::before { /* 最初以外のリストに */
+  content: "";  /* コンテンツなし(線にするため) */
+  width: 1px; /* 線の太さ */
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+/* ホバーしたら境界線の色を変える */
+.navi__list:hover::before {
+  background-color: #0071bb;
+}
+/* ナビのリンクの設定 */
+.navi__list a {
+  /* リンク文字を中央に */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;  /* 下線なし */
+  font-size: 18px;  /* フォントサイズ */
+  letter-spacing: 0.05em; /* 文字間 */
+  font-weight: 700;
+  transition: all 0.3s;
+}
+.navi__list:hover a { /* ホバーしたら白色に */
+  color: #fff;
+}
+.dropdown__lists {
+  display: none;  /* ドロップダウンメニューは通常非表示 */
+  width: 100%;
+  position: absolute; /* いらない？ */
+  left: 0;  /* いらない？ */
+  top: 60px; /* いらない？ */
+}
+.navi__list:hover .dropdown__lists {
+  display: block; /*Gナビメニューにホバーしたら表示*/
+}
+.dropdown__list {
+  background-color: #004d80;  /* 背景色 */
+  height: 50px; /* 高さ */
+  transition: all 0.3s;
+  position: relative;   /* 相対位置、下の枠線のために必要 */
+}
+.dropdown__list:not(:first-child)::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #3492d1;
+  position: absolute;
+  top: 0; /* こっちはいらない？ */
+  left: 0;  /* 左寄りにする */
+}
+.dropdown__list:hover { /* ホバーしたら背景色変更 */
+  background-color: #003558;
+}
+.dropdown__list a { /* ドロップダウンメニューのリンク */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+ /* ドロップダウンメニューのリンクの矢印 */
+.dropdown__list a::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: rotate(135deg);
+  position: absolute;
+  right: 15px;
+  top: calc(50% - 5px);
+}
