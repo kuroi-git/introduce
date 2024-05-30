@@ -1,21 +1,53 @@
-// モーダルウィンドウとボタン、クローズアイコンの要素を取得
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("openModal");
-var span = document.getElementById("closeModal");
+//要素を取得
+const modal = document.querySelector('.js-modal'),
+      open = document.querySelector('.js-modal-open'),
+      close = document.querySelector('.js-modal-close');
 
-// ボタンがクリックされた時にモーダルを表示
-btn.onclick = function () {
-  modal.style.display = "block";
-};
+//「開くボタン」をクリックしてモーダルを開く
+function modalOpen() {
+  modal.classList.add('is-active');
+}
+open.addEventListener('click', modalOpen);
 
-// ×（クローズアイコン）がクリックされた時にモーダルを非表示
-span.onclick = function () {
-  modal.style.display = "none";
-};
+//「閉じるボタン」をクリックしてモーダルを閉じる
+function modalClose() {
+  modal.classList.remove('is-active');
+}
+close.addEventListener('click', modalClose);
 
-// モーダルの外側をクリックした時にモーダルを非表示
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+//「モーダルの外側」をクリックしてモーダルを閉じる
+function modalOut(e) {
+  if (e.target == modal) {
+    modal.classList.remove('is-active');
   }
-};
+}
+addEventListener('click', modalOut);
+
+
+
+
+
+//要素を取得
+const modal1 = document.querySelector('.js-modal1'),
+      open1 = document.querySelector('.js-modal-open1'),
+      close1 = document.querySelector('.js-modal-close1');
+
+//「開くボタン」をクリックしてモーダルを開く
+function modalOpen1() {
+  modal1.classList.add('is-active');
+}
+open1.addEventListener('click', modalOpen1);
+
+//「閉じるボタン」をクリックしてモーダルを閉じる
+function modalClose1() {
+  modal1.classList.remove('is-active');
+}
+close1.addEventListener('click', modalClose1);
+
+//「モーダルの外側」をクリックしてモーダルを閉じる
+function modalOut1(e) {
+  if (e.target == modal1) {
+    modal1.classList.remove('is-active');
+  }
+}
+addEventListener('click', modalOut1);

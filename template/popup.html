@@ -1,30 +1,85 @@
+
+
 <!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta name="robots" content="noindex, nofollow" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>デモページ | CLOSET LAND</title>
-    <link rel="stylesheet" href="css/popup.css" />
-  </head>
-  <body>
-    <button id="openModal">モーダルを開く</button>
+<html labg="en">
+<head>
+<meta chrset="utf-8" />
+<title>Modal App　Challenge</title>
+<link rel="stylesheet" href="css/popup.css" />
+</head>
+<body>
+    <!-- モーダルを開くボタン -->
+  <button class="modal-open js-modal-open">モーダルを開く</button>
 
-    <!-- モーダルウィンドウの内容 -->
+  <!-- モーダル本体 -->
+  <div class="modal js-modal">
 
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span id="closeModal">&times;</span>
-        <p>こちらはモーダルウィンドウの内容です。</p>
-        <p>こちらはモーダルウィンドウの内容です。</p>
-        <p>こちらはモーダルウィンドウの内容です。</p>
-        <p>こちらはモーダルウィンドウの内容です。</p>
-        <p>こちらはモーダルウィンドウの内容です。</p>
-        <p>こちらはモーダルウィンドウの内容です。</p>
+    
+    <div class="modal-container">
+      <!-- モーダルを閉じるボタン -->
+      <div class="modal-close js-modal-close">×</div>
+      <div class="modalScroll">
+        <h1 style="margin:0">Modal1</h1>
+        <div class="hr1"> </div>
+        <div class="ScrollContent">
+          <!-- モーダル内部のコンテンツ -->
+          <div class="modal-content">
+            <p>
+              Click on the outer frame to close
+              <h1>Content1</h1>
+              <h1>Content2</h1>
+              <h1>Content3</h1>
+              <h1>Content4</h1>
+              <h1>Content1</h1>
+              <h1>Content2</h1>
+              <h1>Content3</h1>
+              <h1>Content4</h1>
+              <h1>Content1</h1>
+              <h1>Content2</h1>
+              <h1>Content3</h1>
+              <h1>Content4</h1>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
 
-    <script src="js/popup.js"></script>
+  <button class="modal-open js-modal-open1">モーダルを開く</button>
+
+  <!-- モーダル本体 -->
+  <div class="modal js-modal1">
+
+    
+    <div class="modal-container">
+      <!-- モーダルを閉じるボタン -->
+      <div class="modal-close js-modal-close1">×</div>
+      <div class="modalScroll">
+        <h1 style="margin:0">Modal</h1>
+        <div class="hr1"> </div>
+        <div class="ScrollContent">
+          <!-- モーダル内部のコンテンツ -->
+          <div class="modal-content">
+            <p>
+              Click on the outer frame to close
+              <h1>Content1</h1>
+              <h1>Content2</h1>
+              <h1>Content3</h1>
+              <h1>Content4</h1>
+              <h1>Content1</h1>
+              <h1>Content2</h1>
+              <h1>Content3</h1>
+              <h1>Content4</h1>
+              <h1>Content1</h1>
+              <h1>Content2</h1>
+              <h1>Content3</h1>
+              <h1>Content4</h1>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/popup.js"></script>
   </body>
 </html>
