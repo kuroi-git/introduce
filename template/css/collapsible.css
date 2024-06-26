@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 40px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 26px;
+  top: 20px;
+  bottom: 45px;
+  width: 4px;
+  background: #ccc;
+}
+
+.timeline h2, .timeline .content {
+  margin: 0;
+}
+
+.stage, .content {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.stage::before, .content::before {
+  content: '';
+  position: absolute;
+  left: -25px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 3px solid #ccc;
+  border-radius: 50%;
+  top: 20px;
+  transform: translateY(-50%);
+  margin-right: -20px;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.content.open {
+  max-height: 1000px; /* 大きな値に設定しておく */
+}
+
+.stage {
+  cursor: pointer;
+}

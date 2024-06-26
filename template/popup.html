@@ -6,6 +6,7 @@
 <meta chrset="utf-8" />
 <title>Modal App　Challenge</title>
 <link rel="stylesheet" href="css/popup.css" />
+<link rel="stylesheet" href="css/collapsible.css">
 </head>
 <body>
     <!-- モーダルを開くボタン -->
@@ -24,21 +25,35 @@
         <div class="ScrollContent">
           <!-- モーダル内部のコンテンツ -->
           <div class="modal-content">
-            <p>
-              Click on the outer frame to close
-              <h1>Content1</h1>
-              <h1>Content2</h1>
-              <h1>Content3</h1>
-              <h1>Content4</h1>
-              <h1>Content1</h1>
-              <h1>Content2</h1>
-              <h1>Content3</h1>
-              <h1>Content4</h1>
-              <h1>Content1</h1>
-              <h1>Content2</h1>
-              <h1>Content3</h1>
-              <h1>Content4</h1>
-            </p>
+            <div class="timeline">
+              <h2 class="stage" onclick="toggleContent('childhood')">幼少期</h2>
+              <div id="childhood" class="content">
+                  <p>私は〇〇に生まれ・・・</p>
+                  <p>育ちは〇〇であった</p>
+                  <p>〇〇を見て育ち</p>
+                  <p>を覚えている</p>
+              </div>
+              <h2 class="stage" onclick="toggleContent('youth')">少年期</h2>
+              <div id="youth" class="content">
+                  <!-- 少年期の内容をここに追加 -->
+              </div>
+              <h2 class="stage" onclick="toggleContent('adulthood')">青年期</h2>
+              <div id="adulthood" class="content">
+                  <!-- 青年期の内容をここに追加 -->
+              </div>
+              <h2 class="stage" onclick="toggleContent('midlife')">壮年期</h2>
+              <div id="midlife" class="content">
+                  <!-- 壮年期の内容をここに追加 -->
+              </div>
+              <h2 class="stage" onclick="toggleContent('middleage')">中年期</h2>
+              <div id="middleage" class="content">
+                  <!-- 中年期の内容をここに追加 -->
+              </div>
+              <h2 class="stage" onclick="toggleContent('senior')">高齢期</h2>
+              <div id="senior" class="content">
+                  <!-- 高齢期の内容をここに追加 -->
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -81,5 +96,6 @@
     </div>
   </div>
   <script src="js/popup.js"></script>
+  <script src="js/collapsible.js"></script>
   </body>
 </html>

@@ -52,8 +52,35 @@
   width: 100%;
 }
 
+.flex-contents {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 5%;
+  background-color: aquamarine;
+}
+
+.flex-content {
+  background-color: aliceblue;
+  width: calc(100% / 4 - 10%);
+  margin: 5%;
+}
+.flex-content img {
+  height: 20%;
+  display: block;
+  margin: auto;
+}
+.flex-content h2 {
+  text-align: center;
+  margin:0px
+}
+
+
+
 @media (max-width: 767px) {
   .popup-content {
+    width: calc(100% / 3 - 10%);
+  }
+  .flex-content {
     width: calc(100% / 3 - 10%);
   }
 }
@@ -65,6 +92,9 @@
     row-gap: 10px;
   }
   .popup-content {
+    width: calc(100% / 2 - 10%);
+  }
+  .flex-content {
     width: calc(100% / 2 - 10%);
   }
 }
